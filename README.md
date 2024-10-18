@@ -1,86 +1,130 @@
-# Instagram MERN
-Full-Stack Instagram Clone using MERN Stack and Socket.IO
+# Trendle
 
-[Visit Now](https://instagramweb-mern.vercel.app) 🚀
 
-## 🖥️ Tech Stack
-**Frontend:**
+## Description
 
-![reactjs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
-![react-router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)&nbsp;
-![redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)&nbsp;
-![tailwindcss](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)&nbsp;
-![mui](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)&nbsp;
+**Trendle** is a full-stack Instagram-like social media application that allows users to share photos, connect with friends, and interact through comments and likes. Built with modern web technologies, it offers a responsive design and a seamless user experience.
 
-**Backend:**
+## Features
 
-![nodejs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)&nbsp;
-![expressjs](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)&nbsp;
-![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)&nbsp;
-![jwt](	https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)&nbsp;
+- User Authentication (Sign Up, Log In, Log Out)
+- Create, Edit, and Delete Posts
+- Like and Comment on Posts
+- Real-time Chat Functionality
+- User Profiles with Follow/Unfollow Options
+- Responsive Design for Mobile and Desktop
 
-**Realtime Communication:**
+## Technologies Used
 
-![socketio](https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white)
+- **Frontend:**
+  - React
+  - Axios
+  - CSS (or styled-components)
+  
+- **Backend:**
+  - Node.js
+  - Express
+  - MongoDB (with Mongoose)
+  - Socket.IO for real-time communication
 
-**Cloud Storage:**
+- **Other Libraries:**
+  - dotenv
+  - bcrypt
+  - cors
+  - helmet
+  - morgan
 
-![aws-s3](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+## Installation
 
-**Cloud Storage:** [Cloudinary](https://cloudinary.com/)
+To run the project locally, follow these steps:
 
-**Mail Service:** [Sendgrid](https://sendgrid.com/)
+### Prerequisites
 
-## 🚀 Features
-**Authentication and User Management**
-- ✨ Secure Login/Signup Functionality
-- 🚪 Support for Email or Username-based Login
-- 🔐 Seamless Profile and Password Management
-- 🔄 Password Reset via Sendgrid Integration
+- Node.js
+- MongoDB Atlas account (or local MongoDB)
 
-**Content Management**
-- 📜 Dynamic Infinite Scroll for Posts
-- 🔍 Suggestions for User Connections
-- 🔎 Intuitive Search for Users by Name or Username
-- 🔗 Follow/Unfollow Capability for User Networking
-- ❤️ Like/Unlike Posts with Double-Tap Feature
-- 💬 Commenting on Posts for Interaction
-- 📌 Save/Unsave Posts for Bookmarking
-- 📤 Effortless Post-Sharing Functionality
+### Clone the Repository
 
-**Messaging System**
-- 🔍 User-Friendly Search for Chat Participants
-- 📝 Seamless Creation of New Chats
-- 💬 Real-Time Messaging Between Users
-- 🕒 Status Indicators for Typing and Online Presence
+```bash
+git clone https://github.com/rushionsdomain/trendle.git
+cd trendle
+````
 
-**Social Features**
-- 📊 Comprehensive View of Followers/Following Lists
-- 👍 Post Liked By Users Tracking
-- 😄 Emoji Integration via Emoji Mart
+### Backend Setup
 
-**Image Storage**
-- 📷 Branch [dev-v3-cloudinary](https://github.com/jigar-sable/instagram-mern/tree/dev-v3-cloudinary): Utilizes Cloudinary for Image Storage
-- ☁️ Branch [dev-v2-aws](https://github.com/jigar-sable/instagram-mern/tree/dev-v2-aws): Leverages AWS S3 for Image Storage
-- 💾 Branch [dev-v1](https://github.com/jigar-sable/instagram-mern/tree/dev-v1): Relies on Local Storage Solution
+1.  Navigate to the backend directory:
+    
+    ```bash
+    cd backend
+    ```
+    
+2.  Install dependencies:
+    
+    ```bash
+    npm install
+    ```
+    
+3.  Create a `.env` file in the `backend` directory and add your environment variables. Here’s an example structure:
+    
+    ```makefile
+    MONGO_URI=your_mongodb_uri
+    PORT=5000
+    ```
+    
+4.  Start the backend server:
+    
+    ```bash
+    npm run dev
+    ```
+    
 
-## Sneak Peek of Home Page 🙈 :
-![home](https://user-images.githubusercontent.com/64949957/159116089-cfc2b4c5-dc7d-4d4b-a0c8-668f89ce5412.png)
+### Frontend Setup
 
-<table>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/64949957/159116105-15b9425c-1fec-4a52-84ba-cf97eef93891.png" alt="mockup" /></td>
-    <td><img src="https://user-images.githubusercontent.com/64949957/159116112-1c7dec3e-0f3a-45a8-83d3-6d6b9ee1d5de.png" alt="mockups" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/64949957/159116115-46f15626-372d-4349-8ef4-a04a70600dcc.png" alt="mockup" /></td>
-    <td><img src="https://user-images.githubusercontent.com/64949957/159116118-ac3d261b-eb50-4a7b-a8e6-cd1a0f5720de.png" alt="mockups" /></td>
-  </tr>
-</table>
+1.  Navigate to the frontend directory:
+    
+    ```bash
+    cd frontend
+    ```
+    
+2.  Install dependencies:
+    
+    ```bash
+    npm install
+    ```
+    
+3.  Start the frontend application:
+    
+    ```bash
+    npm start
+    ```
+    
 
-<h2>📬 Contact</h2>
+Usage
+-----
 
-Feel free to reach me through the below handles if you'd like to contact me.
+*   Visit `http://localhost:5000` for the backend API.
+*   Visit `http://localhost:3000` for the frontend application.
 
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jigar-sablee)
-[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/jigarsable.dev)
+Contributing
+------------
+
+Contributions are welcome! If you’d like to contribute, please fork the repository and submit a pull request.
+
+1.  Fork the repository.
+2.  Create your feature branch (`git checkout -b feature/MyFeature`).
+3.  Commit your changes (`git commit -m 'Add some feature'`).
+4.  Push to the branch (`git push origin feature/MyFeature`).
+5.  Open a pull request.
+
+License
+-------
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+### Instructions:
+
+1. **Logo**: Replace `path/to/logo.png` with the actual path to your logo image if you have one. If you don't have a logo, you can remove that line.
+2. **Environment Variables**: Be sure to include the actual variables needed for your project in the `.env` setup section.
+3. **LinkedIn Profile**: Update your LinkedIn link or add other relevant links.
+4. **Additional Features**: You can add more features or sections as needed.
